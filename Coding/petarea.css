@@ -1,0 +1,297 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+    background:#F1E9DB;
+}
+.navbar-custom{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4)0%, rgba(241, 233, 219, 0)100%);
+  /*background:rgba(241, 233, 219, .5);把#F1E9DB這個顏色調成完全透明，.0=出現0%的顏色*/
+}
+/* change the link color */ /*FROM:https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c*/
+.navbar-custom .navbar-nav .nav-link {
+    color: #FCFAFA;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+    text-shadow: 2px 2px 3px #333333;
+}
+/*Change hamburger toggler color FROM:https://www.codeply.com/go/4FdZGlPMNV*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252, 250, 250, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #FCFAFA; /*乳白色*/
+}
+
+/*導覽列的 stroke 動畫，來自https://codepen.io/maheshambure21/pen/QwXaRw*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #FCFAFA;
+}
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: " ";
+  color: transparent;
+  background: #8E443D;
+  height: 2px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+/*以下四個是針對確認登出的Modal做CSS*/
+#bootstrap-overrides .btn-dark{
+  background-color: #9c3726;
+  border-color: #9c3726;
+  font-weight: bold;
+}
+#bootstrap-overrides .btn-dark:hover{
+  background-color: #742a1e;
+  border-color: #742a1e;
+}
+#bootstrap-overrides .modal-dialog{
+  margin: .5rem auto;
+}
+#bootstrap-overrides .btn-warning{
+  background-color: #6c757d;
+  border-color: #6c757d;
+  font-weight: bold;
+  color: white;
+}
+#bootstrap-overrides .btn-warning:hover{
+  background-color: #535b62;
+  border-color: #535b62;
+  color: white;
+}
+/*-----------------以上是導覽列*/
+
+header {
+  position: relative;
+  height: 40vh;  /*vh裝置可視畫面的百分比*/
+  width: 100%;
+  overflow: hidden; /*溢出畫面不會有卷軸*/
+}
+header .container-fluid {
+    position: absolute;
+    top: 14vh;
+    text-shadow: 4px 2px 4px #333333;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-image: url(pic/pet_banner.jpg);
+    filter:brightness(70%);
+    filter: blur(5px);
+}
+@media (max-width: 1200px){ 
+  header {
+    position: relative;
+    height: 30vh;  /*vh裝置可視畫面的百分比*/
+    width: 100%;
+    overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+}
+#no_top{
+  z-index: 2;
+}
+#no_back{
+  z-index: 1;
+}
+/*-----------------以上是header的banner*/
+label{
+  width:5.5rem;
+  padding: .2rem;
+  margin-bottom: 0rem!important;
+  text-align: center;
+  border-style:solid;
+  border-color:#b66e49;
+  border-radius: .3rem 0rem 0rem .3rem;
+}
+#bootstrap-overrides .btn-sm{
+  border-radius: 0rem;
+}
+#bootstrap-overrides .dropdown-menu{
+  min-width: 65%;
+}
+/*改下拉式選單點選時會出現藍色*/
+#bootstrap-overrides .dropdown-item:hover, .dropdown-item:focus {
+  color: white;
+  text-decoration: none;
+  background-color: #E47F4A;
+  cursor: pointer;
+}
+.position {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1px) {
+  .txt_pos {
+    text-align: center;
+  }  
+  .wdth{
+    width: 90%;
+  }
+  .imgSetting{
+    width: 100%;
+    height:30vw;
+    object-fit: cover;
+    border-radius: 20px !important;
+  } 
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  .imgSetting{
+    width: 100%;
+    height:25vw;
+    object-fit: cover;
+    border-radius: 20px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .txt_pos {
+    text-align: right;
+  }
+  .wdth{
+    width: 98%;
+  }
+  .imgSetting{
+    width: 100%;
+    height:15vw;
+    object-fit: cover;
+    border-radius: 20px !important;
+  }  
+}
+.bg-white{
+  background-color: white;
+  border-radius: 1rem; 
+  margin:1.5rem auto;
+}
+#bootstrap-overrides .btn-secondary{
+  background-color: #b66e49;
+  border-color: #b66e49;
+  border-radius: 0% .3rem .3rem 0%;
+}
+#bootstrap-overrides .btn-secondary:hover{ /*dropdown的設定*/
+  background-color: #A46240;
+  border-color: #E47F4A;
+  color:white;
+}
+#bootstrap-overrides .btn-secondary:focus{
+ box-shadow: none;
+}
+#bootstrap-overrides .btn-outline-primary{/*查詢的btn設定*/
+  border:#E47F4A 3px solid;
+  color:#E47F4A;
+  border-radius: .3rem;  
+}
+#bootstrap-overrides .btn-outline-primary:hover{
+  background-color: #E47F4A;
+  border:#E47F4A 3px solid;
+  color:white;
+}
+#bootstrap-overrides .btn-outline-primary:focus, .btn-outline-primary.focus{
+  box-shadow: none;
+}
+#bootstrap-overrides .btn-outline-success{ /*想更認識我的btn設定*/
+  border:#BB4430 3px solid;
+  color:#BB4430;
+  border-radius: .3rem;  
+}
+#bootstrap-overrides .btn-outline-success:hover{
+  background-color: #BB4430;
+  border:#BB4430 3px solid;
+  color:white;
+}
+#bootstrap-overrides .btn-outline-success:focus, .btn-outline-success.focus{
+  box-shadow: none;
+}
+#bootstrap-overrides .btn-outline-danger{ /*我要領養的btn設定*/
+  color:rgba(26,176,30,0.8);
+  border:.1rem solid rgba(26,176,30,0.8);
+}
+#bootstrap-overrides .btn-outline-danger:hover{
+  color:white;
+  background-color: rgba(26,176,30,0.8);
+  border:.1rem solid rgba(26,176,30,0.8);
+}
+#bootstrap-overrides .btn-outline-danger:focus, .btn-outline-danger.focus{
+  box-shadow: none;
+}
+.fa-paw{
+    transform:rotate(20deg);
+    line-height: 7px;
+    vertical-align: top;
+    color:rgba(0,0,0,0.6);
+}
+#bootstrap-overrides .modal-header{
+  border-bottom: 1px dashed rgba(26,176,30,0.4); /*青綠色的底線*/
+}
+#bootstrap-overrides .modal-footer{
+  border-top: 1px dashed rgba(26,176,30,0.4); /*青綠色的頂線*/
+}
+#bootstrap-overrides .modal .table{
+  margin-bottom: .5rem;
+}
+section{
+  background:#F1E9DB;
+}
+.colTable{ /*flex屬性的介紹~https://wcc723.github.io/css/2017/07/21/css-flex/*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/*-----------------以上是網頁內容*/
+
+footer{
+  background:#f5af7e;
+  font-size: 0.9rem;
+}
+a.clear{
+   color:black;   
+   text-decoration: none; /*不讓字在hover時變成藍色+底線*/
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+.footer-menu{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.footer-menu>div>li>a{
+  color:black;
+}
+.footer-menu>div>li>a:hover{
+  color:#BB4430;
+  text-decoration: none;
+}
+.footer-menu-label {
+    border-left: 4px solid #D86969;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+/*-----------------以上是頁尾*/

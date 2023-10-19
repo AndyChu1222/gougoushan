@@ -1,0 +1,227 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+    background:#F1E9DB;
+}
+header {
+  position: relative;
+  height: 40vh;  /*vh裝置可視畫面的百分比*/
+  width: 100%;
+  overflow: hidden; /*溢出畫面不會有卷軸*/
+}
+header .container-fluid {
+    position: absolute;
+    top: 13vh;
+    text-shadow: 4px 2px 4px #333333;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-color: rosybrown;
+    filter:brightness(70%);
+    filter: blur(5px);
+}
+@media (max-width: 1200px){ 
+  header {
+    position: relative;
+    height: 30vh;  /*vh裝置可視畫面的百分比*/
+    width: 100%;
+    overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+}
+#no_top{
+  z-index: 2;
+}
+#no_back{
+   z-index: 1;
+}
+/*-----------------以上是header的banner*/
+#bootstrap-overrides .modal-header{
+  border-bottom: 2px dashed rgba(26,176,30,0.4); /*青綠色的底線*/
+}
+/*秀最新消息*/
+#bootstrap-overrides .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}
+@media (min-width: 577px) {
+  .card-img-top {
+      width: 100%;
+      height:15vw;
+      object-fit: cover;
+      border-radius: 20px !important;
+      padding:0.5rem;
+
+      /*圖上動畫*/
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
+}
+@media (max-width: 576px) {
+  .card-img-top {
+      width: 100%;
+      height: 50vw;
+      object-fit: cover;
+      border-radius: 20px !important;
+      padding:0.5rem;
+
+      /*圖上動畫*/
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
+}
+.carousel-item{
+    width: 100%; /*width you want*/
+    height: 20rem; /*height you want*/
+    overflow: hidden;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#tour{
+  color:grey;
+  padding:1rem 0rem;
+  border-bottom:1px solid gray;
+}
+a{
+  display: block;
+  padding: 1rem 0;
+  color: #063b25!important;
+  border-bottom:1px solid gray;
+  font-weight: bold;
+}
+a:hover{
+  display: block;
+  padding: 1rem 0;
+  color: #063b25!important;
+  text-decoration: none!important;
+  background-color: #e5ffbb!important;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn{
+  color: white;
+  background-color: #5f4848;
+  font-weight: bold;
+}
+.wider{
+  width:8rem;
+}
+.thinner2{
+  width:4rem;
+}
+.form_css{
+  margin: 1.5rem 2rem;
+  padding: 2rem;
+  border: 2px solid #806073;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+.form-control2{
+    display: block;
+    width: 100%;
+    padding: 0rem 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+.form-control3{
+    display: inline;
+    width: 100%;
+    padding: 0rem 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+#bootstrap-overrides .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(139, 82, 53, 1);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(164, 98, 64, .25);
+}
+#bootstrap-overrides .custom-control-input:checked ~ .custom-control-label::before { /*radio顏色改咖啡色*/
+  color: #fff;
+  border-color: rgb(164, 98, 64);
+  background-color: rgb(164, 98, 64);
+}
+#bootstrap-overrides .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {/*radio顏色改咖啡色*/
+  background-color: rgba(164, 98, 64, 0.25);
+}
+#bootstrap-overrides .custom-control-input:focus ~ .custom-control-label::before {/*radio顏色改咖啡色*/
+  box-shadow: 0 0 0 0.2rem rgba(164, 98, 64, 0.25);
+}
+.underline{
+  border-bottom:1px #000 solid;
+  padding-bottom:2px;
+  cursor: pointer;
+}
+.underline: hover{
+  border-bottom:1px #000 solid;
+  padding-bottom:2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10, #d11, #d12, #d13, #d14{
+  border-bottom:1px #000 solid;
+  padding-bottom:2px;
+  cursor: pointer;
+}
+#d1:hover, #d2:hover, #d3:hover, #d4:hover, #d5:hover, #d6:hover, #d7:hover, #d8:hover, #d9:hover, #d10:hover, #d11:hover, #d12:hover, #d13:hover, #d14:hover{
+  border-bottom:1px #000 solid;
+  padding-bottom:2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.ft{ /*modal提示字改成粗體*/
+  font-weight: bold;
+}
+/*以下2個是針對確認登出的Modal做CSS*/
+#bootstrap-overrides .btn-primary{
+  background-color: #9c3726;
+  border-color: #9c3726;
+  font-weight: bold;
+}
+#bootstrap-overrides .btn-primary:hover{
+  background-color: #742a1e;
+  border-color: #742a1e;
+}
+/*-----------------以上是網頁內容*/
+footer{
+  background:rosybrown;
+  font-size: 0.9rem;
+  color: white;
+}
+a.clear{
+   color:black;   
+   text-decoration: none; /*不讓字在hover時變成藍色+底線*/
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+/*-----------------以上是頁尾*/

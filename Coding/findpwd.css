@@ -1,0 +1,79 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+}
+body{
+  background-image: url("pic/back_paw.svg");
+}
+.owhite{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 0)100%);
+}
+/*-----------------以上是導覽列*/
+section{
+  height:90vh;
+}
+.switch{
+  font-size:1.3rem;
+  display: inline-block; /*因為span沒辦法設定寬度，所以要設這個才可以動寬度*/
+  width:100%;
+  color:#A1A1A1;
+  font-weight:bold;
+}
+.activeit{
+  color:rgba(139, 82, 53, 1);
+  cursor:default;
+}
+#bootstrap-overrides .btn:focus{
+  box-shadow: none;
+}
+#bootstrap-overrides .btn-primary{
+  background-color: rgba(164, 98, 64, 1);
+  border-color: rgba(164, 98, 64, 1);
+}
+#bootstrap-overrides .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(139, 82, 53, 1);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(164, 98, 64, .25);
+}
+/*hr { 改不過來?!
+  border-top: 1px dotted red;
+}*/
+/*-----------------以上是內容*/
+
+footer{
+  background:#f5af7e;
+  font-size: 0.9rem;
+  width:100%;
+}
+a.clear{
+   color:#A46240;
+}
+.clear:hover{
+   color:#A46240;
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+.footer-menu{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.footer-menu>div>li>a{
+  color:black;
+}
+.footer-menu>div>li>a:hover{
+  color:#BB4430;
+  text-decoration: none;
+}
+.footer-menu-label {
+    border-left: 4px solid #D86969;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+/*-----------------以上是頁尾*/

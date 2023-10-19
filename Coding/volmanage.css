@@ -1,0 +1,259 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+    background:#F1E9DB;
+}
+.navbar-custom{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4)0%, rgba(241, 233, 219, 0)100%);
+	/*background:rgba(241, 233, 219, .5);把#F1E9DB這個顏色調成完全透明，.0=出現0%的顏色*/
+}
+/* change the link color */ /*FROM:https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c*/
+.navbar-custom .navbar-nav .nav-link {
+    color: #FCFAFA;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+    text-shadow: 2px 2px 3px #333333;
+}
+/*Change hamburger toggler color FROM:https://www.codeply.com/go/4FdZGlPMNV*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252, 250, 250, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #FCFAFA; /*乳白色*/
+}
+body {
+padding-right: 0 !important;
+overflow-y: scroll!important;
+}
+/*導覽列的 stroke 動畫，來自https://codepen.io/maheshambure21/pen/QwXaRw*/
+nav ul>li>a,
+nav ul>li>a:after,
+nav ul>li>a:before {
+  transition: all .5s;
+}
+nav ul>li>a:hover {
+  color: #FCFAFA !important;
+}
+div>ul>li>span>a:hover{
+  color: #FCFAFA !important;
+}
+nav.stroke ul>li>a{
+  position: relative;
+}
+nav.stroke ul>li>a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: " ";
+  color: transparent;
+  background: #8E443D;
+  height: 2px;
+}
+nav.stroke ul>li>a:hover:after {
+  width: 100%;
+}
+
+/*-----------------以上是導覽列*/
+
+header {
+  position: relative;
+  height: 40vh;  /*vh裝置可視畫面的百分比*/
+  width: 100%;
+  overflow: hidden; /*溢出畫面不會有卷軸*/
+}
+header .container-fluid {
+    position: absolute;
+    top: 14vh;
+    text-shadow: 4px 2px 4px #333333;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-image: url(pic/vol_banner.jpg);
+    filter:brightness(70%);
+    filter: blur(8px);
+}
+@media (max-width: 1200px){ 
+  header {
+    position: relative;
+    height: 30vh;  /*vh裝置可視畫面的百分比*/
+    width: 100%;
+    overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+}
+#no_top{
+  z-index: 2;
+}
+#no_back{
+   z-index: 1;
+}
+.wider{
+  width:8rem;
+}
+th,td{
+  vertical-align: middle!important;
+}
+/*-----------------以上是header的banner*/
+section{
+  background:#F1E9DB;
+}
+input.largerCheckbox {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+.setcboxM{
+  margin:2rem 0rem !important;
+}
+.setcboxT{
+  position: relative;
+  top:2px;
+}
+#bootstrap-overrides .btn:focus{
+  box-shadow: none;
+}
+.darkerbg{
+  background-color: #9c3726 !important;
+  border-color: #9c3726 !important;
+}
+.darkerbg:hover{
+  box-shadow: 0 0 0 0.2rem rgba(156, 55, 38, 0.25);
+}
+#bootstrap-overrides .btn-primary{
+  background-color: #E47F4A;
+  border-color: #E47F4A;
+  font-weight: bold;
+}
+.modal-backdrop {
+  opacity: 0.6
+}
+.border_dash{
+  border-style:dotted;
+  border-color:rgba(187, 68, 48, 0.6);
+}
+.border_dash1{
+  border-bottom: 4px dotted rgba(187, 68, 48, 0.2);
+}
+.bord-color{
+  border-color: #6c757d;
+}
+.fc-title{
+  font-size: 1rem;
+  padding: .5rem
+}
+#bootstrap-overrides .fc-event-container{
+  background-color: white;
+  border: 0.5rem solid white; 
+}
+#bootstrap-overrides .fc-event{
+  background-color: white;
+  margin:0;
+  border:.15rem solid orange;
+  padding: .3rem;
+  color:black;
+}
+#bootstrap-overrides .fc-event:hover{
+  background-color: #fdfdb4;
+  margin:0;
+  border:.15rem solid orange;
+  padding: .3rem;
+  color:black;
+  cursor: pointer;
+}
+#bootstrap-overrides .fc-scroller{
+  /*overflow: hidden !important;*/
+}
+.gray{
+  color:#545454;
+}
+.gray:hover{
+  color:#212121;
+}
+#bootstrap-overrides .modal{
+  overflow-y: hidden !important;
+}
+.overflo_modal{
+  height: 60vh;
+  overflow-y: auto !important;
+}
+.reborder{
+  border:1px solid #dae0e5;
+  border-radius: 4px 4px 4px 4px;
+}
+#bootstrap-overrides input{
+  padding: 0.375rem 0.75rem;
+}
+/*以下四個是針對確認登出的Modal做CSS*/
+#bootstrap-overrides .btn-danger{
+  background-color: #9c3726;
+  border-color: #9c3726;
+  font-weight: bold;
+}
+#bootstrap-overrides .btn-danger:hover{
+  background-color: #742a1e;
+  border-color: #742a1e;
+}
+#bootstrap-overrides .modal-dialog{
+  margin: .5rem auto;
+}
+/*-----------------/以上是志工管理的內容*/
+
+footer{
+  background:#f5af7e;
+  font-size: 0.9rem;
+}
+a.clear{
+   color:black;   
+   text-decoration: none!important;
+}
+a:hover{
+   color:black!important;
+   font-weight: bold;
+}
+.fa-paw{
+    transform:rotate(20deg);
+    line-height: 7px;
+    vertical-align: top;
+}
+a>.fa-paw{
+    transform:rotate(20deg);
+    line-height: 1.3rem;
+    vertical-align: top;
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+.footer-menu{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.footer-menu>div>li>a{
+  color:black;
+}
+.footer-menu>div>li>a:hover{
+  color:#BB4430;
+  text-decoration: none;
+}
+.footer-menu-label {
+    border-left: 4px solid #D86969;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+/*-----------------以上是頁尾*/

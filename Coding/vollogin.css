@@ -1,0 +1,194 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+}
+body{
+  background-image: url("pic/back_paw.svg");
+}
+.owhite{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 0)100%);
+}
+/*-----------------以上是導覽列*/
+section{
+  height:90vh;
+}
+.switch{
+  font-size:1.3rem;
+  display: inline-block; /*因為span沒辦法設定寬度，所以要設這個才可以動寬度*/
+  width:50%;
+  color:#A1A1A1;
+  font-weight:bold;
+  cursor: pointer; /*把游標轉成可按下式的*/
+}
+.activeit{
+  color:rgba(139, 82, 53, 1);
+  cursor:default;
+}
+#a2{
+  border-left:1px solid gray;
+}
+#bootstrap-overrides .btn-success{
+  background-color: rgba(164, 98, 64, 1);
+  border-color: rgba(164, 98, 64, 1);
+}
+#bootstrap-overrides .btn-success:hover{
+  background-color: rgba(139, 82, 53, 1);
+  border-color: rgba(139, 82, 53, 1);
+}
+#bootstrap-overrides .btn:focus{
+  box-shadow: none;
+}
+.btn{
+  padding: .4rem .75rem !important;
+}
+#bootstrap-overrides .form-control{
+  height: calc(1.8em + .75rem + 2px);
+}
+#bootstrap-overrides .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(139, 82, 53, 1);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(164, 98, 64, .25);
+}
+#bootstrap-overrides .form-check-input{
+  color:black;
+}
+/*自訂checkbox*/
+/* Hide the browser's default checkbox */
+.form-check-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgba(164, 98, 64, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*以上是自訂checkbox*/
+/*註冊*/
+.form-group>label{
+  position: relative;
+  left:3px;
+}
+hr{
+  position: relative;
+  top:-3px;
+}
+.mouse{
+  cursor: default;
+}
+#mouse2{
+  cursor:pointer;
+   color:#A46240;
+}
+#mouse2:hover{
+  text-decoration: none;
+  color:#A46240;
+}
+#bootstrap-overrides .custom-control-input:checked ~ .custom-control-label::before { /*radio顏色改咖啡色*/
+  color: #fff;
+  border-color: rgb(164, 98, 64);
+  background-color: rgb(164, 98, 64);
+}
+#bootstrap-overrides .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {/*radio顏色改咖啡色*/
+  background-color: rgba(164, 98, 64, 0.25);
+}
+#bootstrap-overrides .custom-control-input:focus ~ .custom-control-label::before {/*radio顏色改咖啡色*/
+  box-shadow: 0 0 0 0.2rem rgba(164, 98, 64, 0.25);
+}
+/*以上是註冊*/
+#bootstrap-overrides input{
+  padding: 0.375rem 0.75rem;
+}
+.test1{
+  border:1px solid #dae0e5;
+  border-radius: 4px 4px 4px 4px;
+}
+.linkTo1{
+  color:#da4646;
+  text-shadow: 2px 2px #ffcfcf;
+  text-decoration: none;
+}
+.linkTo1:hover{
+  color:#da4646;
+}
+/*-----------------以上是內容*/
+
+footer{
+  background:#f5af7e;
+  font-size: 0.9rem;
+  width:100%;
+}
+a.clear{
+   color:#A46240;
+}
+.clear:hover{
+   color:#A46240;
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+.footer-menu{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.footer-menu>div>li>a{
+  color:black;
+}
+.footer-menu>div>li>a:hover{
+  color:#BB4430;
+  text-decoration: none;
+}
+.footer-menu-label {
+    border-left: 4px solid #D86969;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+/*-----------------以上是頁尾*/

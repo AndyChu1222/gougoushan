@@ -1,0 +1,308 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+    background:#F1E9DB;
+}
+.navbar-custom{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4)0%, rgba(241, 233, 219, 0)100%);
+	/*background:rgba(241, 233, 219, .5);把#F1E9DB這個顏色調成完全透明，.0=出現0%的顏色*/
+}
+/* change the link color */ /*FROM:https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c*/
+.navbar-custom .navbar-nav .nav-link {
+    color: #FCFAFA;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+    text-shadow: 2px 2px 3px #333333;
+}
+/*Change hamburger toggler color FROM:https://www.codeply.com/go/4FdZGlPMNV*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252, 250, 250, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #FCFAFA; /*乳白色*/
+}
+
+/*導覽列的 stroke 動畫，來自https://codepen.io/maheshambure21/pen/QwXaRw*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #FCFAFA;
+}
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: " ";
+  color: transparent;
+  background: #8E443D;
+  height: 2px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+/*-----------------以上是導覽列*/
+
+/*當畫面寬小於767px時，調整以下動作*/
+@media (max-width: 768px) { 
+  header {
+  position: relative;
+  height: 50vh;  /*vh裝置可視畫面的百分比*/
+  width: 100%;
+  overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+ header .container-fluid {
+  position: absolute;
+  top: 15vh;
+  text-shadow: 4px 2px 4px #333333;
+  text-align: center;
+ }
+}
+/*當畫面寬介於768~1200px時，調整以下動作*/
+@media (min-width: 768px) and (max-width:1200px){ 
+  header {
+  position: relative;
+  height: 50vh;  /*意思是我的高佔畫面高度的50%(vh=裝置可視畫面的百分比)*/
+  width: 100%;
+  overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+  header .container-fluid {
+    position: absolute;
+    top: 20vh;
+    text-shadow: 4px 2px 4px #333333;
+    text-align: center;
+  }
+}
+@media (min-width: 1201px){ 
+  header {
+    position: relative;
+    height: 75vh;  /*vh裝置可視畫面的百分比*/
+    width: 100%;
+    overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+ /*E F，利用空白鍵區隔兩個元素，表示在 E 元素內的 F 元素才會套用。*/
+   header .container-fluid {
+    position: absolute;
+    top: 25vh;
+    left: 10rem;
+    text-shadow: 4px 2px 4px #333333;
+  }
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*兩眼面對電腦螢幕的這個方向就是 z 軸。z-index 指的就是這個方向，你可以設定為正數或負數，正數代表離你越近，負數則代表離你越遠。*/
+#no_top{
+  z-index: 2;
+}
+#no_back{
+   z-index: 1;
+}
+#bootstrap-overrides .btn-success{
+  background-color: rgba(26,176,30,0.7);
+  border:none;
+  box-shadow: 0px 2px 5px #333333;
+  -webkit-box-shadow: 0px 2px 5px #333333;
+  -moz-box-shadow: 0px 2px 5px #333333;
+}
+#bootstrap-overrides .btn-success:hover{
+  background-color: rgba(26,176,30,8);
+}
+#bootstrap-overrides .modal-header{
+  border-bottom: 2px dashed rgba(26,176,30,0.4); /*青綠色的底線*/
+}
+#bootstrap-overrides .page-link{
+  color: rgba(164, 98, 64, 1);
+}
+#bootstrap-overrides .page-link:hover{
+  color: white;
+  background-color: rgba(164, 98, 64, 1);
+}
+#bootstrap-overrides .page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+.changColor{
+  color: white !important;
+  background-color: rgba(164, 98, 64, 1) !important;
+}
+.notAllowed{
+  cursor: not-allowed;
+}
+/*-----------------以上是header的banner*/
+.fa-paw{
+    transform:rotate(20deg);
+    line-height: 7px;
+    vertical-align: top;
+}
+section{
+  background:#F1E9DB;
+}
+/*以下是狗狗山特色*/
+
+.r1{
+  transform: rotate(-4deg);
+}
+.r2{
+  transform: rotate(-2deg);
+}
+.r3{
+  transform: rotate(5deg);
+}
+/*以下是最新消息*/
+#bootstrap-overrides .card-footer { /*子孫選擇器的介紹 https://reurl.cc/7yj9QQ*/
+    /*改寫bootstrap的權重問題，請看https://stackoverflow.com/questions/20721248/how-can-i-override-bootstrap-css-styles*/
+    border-top: 0px solid rgba(0,0,0,.125);
+}
+#bootstrap-overrides .card-text{
+  color:gray;
+  font-size: 90%;
+}
+#bootstrap-overrides .card{
+    border-radius: 20px;
+}
+#bootstrap-overrides .card:hover
+{
+  box-shadow: 0px 2px 7px #333333;
+  -webkit-box-shadow: 0px 2px 7px #333333;
+  -moz-box-shadow: 0px 2px 7px #333333;
+  transition: all .2s;
+}
+.card-title{
+  font-weight:bold;
+  color:#363636;
+}
+.card-title:hover{
+  color:#F06543;
+}
+#bootstrap-overrides .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}
+@media (min-width: 577px) {
+  .card-img-top {
+      width: 100%;
+      height:15vw;
+      object-fit: cover;
+      border-radius: 20px !important;
+      padding:0.5rem;
+
+      /*圖上動畫*/
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
+}
+@media (max-width: 576px) {
+  .card-img-top {
+      width: 100%;
+      height: 50vw;
+      object-fit: cover;
+      border-radius: 20px !important;
+      padding:0.5rem;
+
+      /*圖上動畫*/
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
+}
+.carousel-item{
+    width: 100%; /*width you want*/
+    height: 20rem; /*height you want*/
+    overflow: hidden;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#more:hover{
+    color:#F06543;
+}
+#bootstrap-overrides .btn:focus{
+  box-shadow: none;
+}
+#bootstrap-overrides .btn-primary{
+  background-color: #9c3726;
+  border-color: #9c3726;
+  font-weight: bold;
+}
+#bootstrap-overrides .btn-primary:hover{
+  background-color: #742a1e;
+  border-color: #742a1e;
+}
+#bootstrap-overrides .modal-dialog{
+  margin: .5rem auto;
+}
+/*-----------------以上是中段內容*/
+
+footer{
+  background:#f5af7e;
+  font-size: 0.9rem;
+}
+a.clear{
+   color:black;   
+   text-decoration: none; /*不讓字在hover時變成藍色+底線*/
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+.footer-menu{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.footer-menu>div>li>a{
+  color:black;
+}
+.footer-menu>div>li>a:hover{
+  color:#BB4430;
+  text-decoration: none;
+}
+.footer-menu-label {
+    border-left: 4px solid #D86969;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+/*-----------------以上是頁尾*/
+
+/*照片蓋上顏色
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+*/

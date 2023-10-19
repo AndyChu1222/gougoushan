@@ -1,0 +1,242 @@
+html {
+    font-size: 1rem; /*1rem=16px*/
+    background:#F1E9DB;
+}
+.navbar-custom{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4)0%, rgba(241, 233, 219, 0)100%);
+  /*background:rgba(241, 233, 219, .5);把#F1E9DB這個顏色調成完全透明，.0=出現0%的顏色*/
+}
+/* change the link color */ /*FROM:https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c*/
+.navbar-custom .navbar-nav .nav-link {
+    color: #FCFAFA;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+    text-shadow: 2px 2px 3px #333333;
+}
+/*Change hamburger toggler color FROM:https://www.codeply.com/go/4FdZGlPMNV*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252, 250, 250, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #FCFAFA; /*乳白色*/
+}
+
+/*導覽列的 stroke 動畫，來自https://codepen.io/maheshambure21/pen/QwXaRw*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #FCFAFA;
+}
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: " ";
+  color: transparent;
+  background: #8E443D;
+  height: 2px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+#bootstrap-overrides .btn:focus{
+  box-shadow: none;
+}
+#bootstrap-overrides .btn-primary{
+  background-color: #9c3726;
+  border-color: #9c3726;
+  font-weight: bold;
+}
+#bootstrap-overrides .btn-primary:hover{
+  background-color: #742a1e;
+  border-color: #742a1e;
+}
+#bootstrap-overrides .modal-dialog{
+  margin: .5rem auto;
+}
+/*-----------------以上是導覽列*/
+
+header {
+  position: relative;
+  height: 40vh;  /*vh裝置可視畫面的百分比*/
+  width: 100%;
+  overflow: hidden; /*溢出畫面不會有卷軸*/
+}
+header .container-fluid {
+    position: absolute;
+    top: 14vh;
+    text-shadow: 4px 2px 4px #333333;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-image: url(pic/about_b2.jpg);
+    filter:brightness(70%);
+    filter: blur(5px);
+}
+@media (max-width: 1200px){ 
+  header {
+    position: relative;
+    height: 30vh;  /*vh裝置可視畫面的百分比*/
+    width: 100%;
+    overflow: hidden; /*溢出畫面不會有卷軸*/
+ }
+}
+#no_top{
+  z-index: 2;
+}
+#no_back{
+   z-index: 1;
+}
+/*-----------------以上是header的banner*/
+
+.tit{
+text-align:center;
+font-family: Microsoft JhengHei;
+}
+.title{
+  text-align: center;
+  font-family: Microsoft JhengHei;
+}
+.story{
+  font-weight: bold;
+}
+.vid{
+  position:center center;
+}
+.bg-choco{
+  background-color: #A46240;
+  border-radius: 20px;
+}
+.bg-white{
+  background-color: white;
+  border-radius: 20px;
+  margin:1.5rem auto;
+}
+.bg-white-1997{
+  background-color: white;
+  border-radius: 20px;
+  margin:0 1.5rem auto auto;
+}
+@media (max-width: 576px) {
+  .adjust_m{
+    margin:1rem;
+  }
+}
+@media (max-width: 768px) {
+  .adjustwid{
+    width:50vw;
+    height: 50vw;
+  }
+}
+@media (min-width: 769px){
+  .adjustwid{
+    width:20vw;
+    height: 20vw;
+  }  
+}
+.fa-paw{
+    transform:rotate(20deg);
+    line-height: 7px;
+    vertical-align: top;
+}
+section{
+  background:#F1E9DB;
+}
+.carousel-item{
+    width: 100%; /*width you want*/
+    height: 20rem; /*height you want*/
+    overflow: hidden;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#carouselhere{
+  border-radius: 20px;
+}
+.video-container{
+position:relative;
+padding-bottom:56.25%;
+padding-top:30px;height:0;overflow:hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+/*Google Map*/
+.map-resposive{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-resposive iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+/*-----------------以上是網頁內容*/
+
+footer{
+  background:#f5af7e;
+  font-size: 0.9rem;
+}
+a.clear{
+   color:black;   
+   text-decoration: none; /*不讓字在hover時變成藍色+底線*/
+}
+.fa-facebook-square:hover{
+  color:#BB4430;
+}
+.fa-instagram:hover{
+  color:#BB4430;
+}
+.footer-menu{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.footer-menu>div>li>a{
+  color:black;
+}
+.footer-menu>div>li>a:hover{
+  color:#BB4430;
+  text-decoration: none;
+}
+.footer-menu-label {
+    border-left: 4px solid #D86969;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+/*-----------------以上是頁尾*/
