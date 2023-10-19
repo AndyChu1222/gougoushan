@@ -6,17 +6,17 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="utf-8">
-    <title>GougouShan</title>
-    <style type="text/css">
-            @import url(about.css);
+	<meta charset="utf-8">
+	<title>GougouShan</title>
+	<style type="text/css">
+			@import url(about.css);
 	</style>
 	<!--bootstrap.min.css的min意思是指程式碼經過壓縮的檔案，適合網站上線時使用，程式碼可讀性較低-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!--width=device-width將寬度設為設備的寬度，initial-scale=1 設定手機螢幕畫面的初始縮放比例為100%，shrink-to-fit=no是蘋果手機專屬的設定-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!--width=device-width將寬度設為設備的寬度，initial-scale=1 設定手機螢幕畫面的初始縮放比例為100%，shrink-to-fit=no是蘋果手機專屬的設定-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<!--bootstrap.bundle.min.js這行是為了要使用popper，popper可以用來做提示框元件，目前還沒用到-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/09745b270c.js" crossorigin="anonymous"></script>
@@ -30,73 +30,73 @@
 		<div class="row" >
 		<div class="col-md-12"> 
 			<!--螢幕寬度>=992px時做出橫列導覽列-->
-		    <nav class="nav navbar-expand-xl fixed-top stroke navbar-custom">
-		    	<a class="navbar-brand mr-5" href="index.php">
-		    		<img src="pic/logo.svg" alt="Logo" style="width:10rem;">
-		    	</a>
+			<nav class="nav navbar-expand-xl fixed-top stroke navbar-custom">
+				<a class="navbar-brand mr-5" href="index.php">
+					<img src="pic/logo.svg" alt="Logo" style="width:10rem;">
+				</a>
 
-		    	<!---設定可折疊的導覽列-->
-		    	<button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#colphere">
-		    	<!---data-toggle="collapse" 讓他有收起和展開的功能-->
-	    		<span class="navbar-toggler-icon"></span>
-	    		</button>
+				<!---設定可折疊的導覽列-->
+				<button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#colphere">
+				<!---data-toggle="collapse" 讓他有收起和展開的功能-->
+				<span class="navbar-toggler-icon"></span>
+				</button>
 
-	    		<!---設定項目-->
-		    	<div class="collapse navbar-collapse" id="colphere">
-		    		<div class="container-fluid">
-		    			<div class="row" >
+				<!---設定項目-->
+				<div class="collapse navbar-collapse" id="colphere">
+					<div class="container-fluid">
+						<div class="row" >
 							<div class="col-md-9"> <!-- order-md-1 order-sm-2-->
 							<ul class="navbar-nav float-right font-weight-bold">
-								    <li class="nav-item"> <!--選擇到某頁了可以+上active在這個nav-item旁邊-->
-								    	<a class="nav-link mx-3 px-3" href="about.php">關於我們</a>
-								    </li>
-								    <li class="nav-item">
-								    	<a class="nav-link mx-3 px-3" href="petarea.php">貓狗專區</a>
-								    </li>
-								    <li class="nav-item">
-								  		<a class="nav-link mx-3 px-3" href="support.php">支持我們</a>
-								    </li>
-								    <li class="nav-item">
-								  		<a class="nav-link mx-3 px-3" href="tourbook.php">檢視活動</a>
-								    </li>
-								    <li class="nav-item">
-								  		<a class="nav-link mx-3 px-3 " href="voljoin.php">志工招募</a>
-								    </li>
-								    <li class="nav-item">
-								  		<a class="nav-link mx-3 px-3 " id="vm1" href="">志工專區</a>
-								    </li>
-							 	</ul>	
+									<li class="nav-item"> <!--選擇到某頁了可以+上active在這個nav-item旁邊-->
+										<a class="nav-link mx-3 px-3" href="about.php">關於我們</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mx-3 px-3" href="petarea.php">貓狗專區</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mx-3 px-3" href="support.php">支持我們</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mx-3 px-3" href="tourbook.php">檢視活動</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mx-3 px-3 " href="voljoin.php">志工招募</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mx-3 px-3 " id="vm1" href="">志工專區</a>
+									</li>
+								</ul>	
 							</div>
 							<div class="col-md-3">
 								<!---ml-auto靠右對齊-->
 								<ul class="navbar-nav float-right font-weight-bold">
-							 		<li class="nav-item">
-								  		<a class="nav-link mx-3" href="vollogin.php" id="v1">登入/註冊</a>
-								    </li>
-							 	</ul>					    		
+									<li class="nav-item">
+										<a class="nav-link mx-3" href="vollogin.php" id="v1">登入/註冊</a>
+									</li>
+								</ul>					    		
 							</div>
 						</div>
 					</div>	
-		    	</div> 		
-		   </nav>
-		 </div> 
+				</div> 		
+			</nav>
+		</div> 
 		</div>
 	</div>
 	<!-- 確認要不要登出ㄉModal -->
 	<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="em" aria-hidden="true">
-	  	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 300px;">
-	    	<div class="modal-content">
-	    		<form action="index.php" method="POST">
-		      		<div class="modal-header text-center">
-		        		<h5 class="modal-title w-100" id="em">您確定要登出嗎？</h5>
-		      		</div>
-		      		<div class="modal-footer" style="justify-content: center;">
-		      			<input type="hidden" name="CheckLogout" value="1">
-		        		<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-		        		<button type="submit" class="btn btn-primary">確認登出</button>
-		      		</div>	    			
-	    		</form>
-	    	</div>
+		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 300px;">
+			<div class="modal-content">
+				<form action="index.php" method="POST">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100" id="em">您確定要登出嗎？</h5>
+					</div>
+					<div class="modal-footer" style="justify-content: center;">
+						<input type="hidden" name="CheckLogout" value="1">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+						<button type="submit" class="btn btn-primary">確認登出</button>
+					</div>	    			
+				</form>
+			</div>
 		</div>
 	</div>
 	<?php
@@ -132,13 +132,13 @@
 <header>
 	<div id="no_back" class="cover h-100 w-100" data-src="pic/about_b2.jpg"></div>
 	<div id="no_top" class="container-fluid">
-	  	<div class="row align-items-center justify-content-center">
-	  		<div class="col-12 text-white text-center"><!--Height 100%-->
-	  			<!--這裡vmax意思是，我的字體大小是螢幕最"長"邊的4%，vmin意思是，我的字體大小是螢幕最"短"邊的XX%-->
-		        <h1 style="font-size:5vmax;">關於我們</h1> <!--類似h1的作法可設置display-(1~4)--> 
-	        </div>
-	    </div>
-	  </div>
+		<div class="row align-items-center justify-content-center">
+			<div class="col-12 text-white text-center"><!--Height 100%-->
+				<!--這裡vmax意思是，我的字體大小是螢幕最"長"邊的4%，vmin意思是，我的字體大小是螢幕最"短"邊的XX%-->
+				<h1 style="font-size:5vmax;">關於我們</h1> <!--類似h1的作法可設置display-(1~4)--> 
+			</div>
+		</div>
+	</div>
 </header>
 
 <!--以上是banner-->
@@ -159,10 +159,10 @@
 			<div class="col text-center">
 				<img src="pic/teacher1.jpg" class="rounded-circle adjustwid">
 				<div> <!--太單調可加平行四邊形：https://shubo.io/pure-css-parallelogram/-->
-	    			<h5 class="font-weight-bold my-3">張帆 老師</h5>
-	    			<p>張老師是一位非常負責而且有愛心的創辦人，大大小小的事都一手包辦，而且無怨無悔付出。<br>不是在前往救援的路上，就是在園區裡為毛孩們忙碌。
-	    			</p>
-	  			</div>
+					<h5 class="font-weight-bold my-3">張帆 老師</h5>
+					<p>張老師是一位非常負責而且有愛心的創辦人，大大小小的事都一手包辦，而且無怨無悔付出。<br>不是在前往救援的路上，就是在園區裡為毛孩們忙碌。
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -181,27 +181,27 @@
 		<div class="row">
 			<div class="col text-center">
 				<img src="pic/aboutfriend2.jpg" class="rounded-circle mt-3">
-				 <div class="card-body">
-	    			<h5 class="card-title font-weight-bold">友善環境</h5>
-	    			<p class="card-text" style="text-align:justify;">我們重視每隻毛孩的個性，志工們以不同的方式和毛孩進行親人訓練，因此狗狗山所收邊的毛孩們都非常友善。</p>
-	    			<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-	  			</div>
+				<div class="card-body">
+					<h5 class="card-title font-weight-bold">友善環境</h5>
+					<p class="card-text" style="text-align:justify;">我們重視每隻毛孩的個性，志工們以不同的方式和毛孩進行親人訓練，因此狗狗山所收邊的毛孩們都非常友善。</p>
+					<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+				</div>
 			</div>
 			<div class="col text-center">
 				<img src="pic/aboutlove2.jpg" class="rounded-circle mt-3">
-				 <div class="card-body">
-	    			<h5 class="card-title font-weight-bold">愛心守護</h5>
-	    			<p class="card-text" style="text-align:justify;">透過陪伴與照護，我們積極的將狗狗山充滿著幸福感，人們前來，也能感覺到幸福。</p>
-	    			<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-	  			</div>
+				<div class="card-body">
+					<h5 class="card-title font-weight-bold">愛心守護</h5>
+					<p class="card-text" style="text-align:justify;">透過陪伴與照護，我們積極的將狗狗山充滿著幸福感，人們前來，也能感覺到幸福。</p>
+					<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+				</div>
 			</div>			
 			<div class="col text-center">
 				<img src="pic/aboutedu2.jpg" class="rounded-circle mt-3">
-				 <div class="card-body">
-	    			<h5 class="card-title font-weight-bold">生命教育</h5>
-	    			<p class="card-text" style="text-align:justify;">在這些流浪貓狗中，有許多已經面臨過生臨死別的場景，而這些故事更是需要傳達給每個人，告訴人們每個生命的重要與獨特。</p>
-	    			<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-	  			</div>
+				<div class="card-body">
+					<h5 class="card-title font-weight-bold">生命教育</h5>
+					<p class="card-text" style="text-align:justify;">在這些流浪貓狗中，有許多已經面臨過生臨死別的場景，而這些故事更是需要傳達給每個人，告訴人們每個生命的重要與獨特。</p>
+					<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+				</div>
 			</div>
 		</div>
 	</div>
@@ -221,23 +221,23 @@
 		<div class="row justify-content-center bg-white-1997">
 			<div class="col-sm col-12 my-3">
 					<div id="carouselhere" class="carousel slide" data-ride="carousel">
-					    <ol class="carousel-indicators">
-						    <li data-target="#carouselhere" data-slide-to="0" class="active"></li>
-						    <li data-target="#carouselhere" data-slide-to="1"></li>
+						<ol class="carousel-indicators">
+							<li data-target="#carouselhere" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselhere" data-slide-to="1"></li>
 						</ol>
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					      <img src="pic/Chris1.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="pic/Chris2.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					  </div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="pic/Chris1.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
+						<div class="carousel-item">
+							<img src="pic/Chris2.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
+					</div>
 					</div>
 			</div>
 			<div class="col-sm col-12 align-self-center text-center mr-3 adjust_m">
 				<h5 class="card-title font-weight-bold">1997-成立私人狗園</h5>
-		    	<p class="card-text" style="text-align:justify;">來自美國的Chris Ward發現台灣的流浪狗問題，投入救援行動，在臺中勤益科大附近建立了暫時性的狗場，取名為狗狗山。因緣際會下，張老師透過幾位志工的帶領，接觸了狗狗山，也十分認同Chris尊重生命的理念，只要一有空閒便前往狗場幫忙，為狗狗山盡心盡力。</p>
+				<p class="card-text" style="text-align:justify;">來自美國的Chris Ward發現台灣的流浪狗問題，投入救援行動，在臺中勤益科大附近建立了暫時性的狗場，取名為狗狗山。因緣際會下，張老師透過幾位志工的帶領，接觸了狗狗山，也十分認同Chris尊重生命的理念，只要一有空閒便前往狗場幫忙，為狗狗山盡心盡力。</p>
 			</div>
 		</div>
 	</div>
@@ -245,27 +245,27 @@
 		<div class="row justify-content-center bg-white">
 			<div class="col-sm col-12 my-3">
 					<div id="carouselhere2" class="carousel slide" data-ride="carousel">
-					    <ol class="carousel-indicators">
-						    <li data-target="#carouselhere2" data-slide-to="0" class="active"></li>
-						    <li data-target="#carouselhere2" data-slide-to="1"></li>
-						    <li data-target="#carouselhere2" data-slide-to="2"></li>
+						<ol class="carousel-indicators">
+							<li data-target="#carouselhere2" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselhere2" data-slide-to="1"></li>
+							<li data-target="#carouselhere2" data-slide-to="2"></li>
 						</ol>
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					      <img src="pic/2003.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="pic/2003-2.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="pic/2003-3.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					  </div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="pic/2003.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
+						<div class="carousel-item">
+							<img src="pic/2003-2.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
+						<div class="carousel-item">
+							<img src="pic/2003-3.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
 					</div>
+				</div>
 			</div>
 			<div class="col-sm col-12 align-self-center text-center order-sm-first mx-2 adjust_m">
 				<h5 class="card-title font-weight-bold">2003-責任交接</h5>
-		    	<p class="card-text"  style="text-align:justify;">直到2003年，Chris無法繼續留在台灣，張老師為了延續這份精神，接手成為狗狗山的負責人，開始著手園區的規劃、照顧所有貓狗的健康大小事與送養計畫等，但因為規模較小，老師與志工們積極尋找攤位增加曝光率，竭誠歡迎學校及民間團體的加入，以生命教育治癒人心。</p>
+				<p class="card-text"  style="text-align:justify;">直到2003年，Chris無法繼續留在台灣，張老師為了延續這份精神，接手成為狗狗山的負責人，開始著手園區的規劃、照顧所有貓狗的健康大小事與送養計畫等，但因為規模較小，老師與志工們積極尋找攤位增加曝光率，竭誠歡迎學校及民間團體的加入，以生命教育治癒人心。</p>
 			</div>
 		</div>
 	</div>
@@ -273,30 +273,30 @@
 		<div class="row justify-content-center bg-white">
 			<div class="col-sm col-12 my-3">
 					<div id="carouselhere3" class="carousel slide" data-ride="carousel">
-					    <ol class="carousel-indicators">
-						    <li data-target="#carouselhere3" data-slide-to="0" class="active"></li>
-						    <li data-target="#carouselhere3" data-slide-to="1"></li>
+						<ol class="carousel-indicators">
+							<li data-target="#carouselhere3" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselhere3" data-slide-to="1"></li>
 						</ol>
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					      <img src="pic/2021-2.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="pic/2021-3.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
-					    </div>
-					  </div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="pic/2021-2.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
+						<div class="carousel-item">
+							<img src="pic/2021-3.jpg" class="d-block w-100" alt="..." style="border-radius: 20px;">
+						</div>
 					</div>
+				</div>
 			</div>
 			<div class="col-sm col-12 align-self-center text-center mr-3 adjust_m">
 				<h5 class="card-title font-weight-bold">2021-協會正式成立</h5>
-		    	<p class="card-text" style="text-align:justify;">歷經多次的顛簸，將園區從太平搬到霧峰，現在的狗狗山園區不僅是貓狗等待主人的避風港，更是服務學習的教育中心，使人們重視每個生命，進而成為有責任心的主人，給予貓狗一個溫暖的家。 </p>
+				<p class="card-text" style="text-align:justify;">歷經多次的顛簸，將園區從太平搬到霧峰，現在的狗狗山園區不僅是貓狗等待主人的避風港，更是服務學習的教育中心，使人們重視每個生命，進而成為有責任心的主人，給予貓狗一個溫暖的家。 </p>
 			</div>
 		</div>
 	</div>	
 	<!-- /成立故事卡片 -->
 	<div class="container">
-		<div class="video-container" style="border-radius: 20px;width">
-		    <iframe width="697" height="392" src="https://www.youtube.com/embed/8wyLwnoBOKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="video-container" style="border-radius: 20px;width:auto">
+			<iframe width="697" height="392" src="https://www.youtube.com/embed/8wyLwnoBOKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -316,26 +316,26 @@
 			<div class="col-lg-12">
 				<div class="mb-5">
 					<table class="table table-hover table-striped text-center">
-				  		<thead class="thead-dark">
-				    	<tr>
-				      		<th scope="col">年分</th>
-				      		<th scope="col">事蹟</th>
-				    	</tr>
-				  		</thead>
-				  		<tbody>
-				    	<tr>
-					      	<th scope="row">109</th>
-					      	<td>歷經10餘年，狗寶貝和貓寶貝成功送養達到400隻！</td>
-				       	</tr>
-				    	<tr>
-					      	<th scope="row">108</th>
-					      	<td>與中友百貨合作，以狗狗山的特色推出限量愛心商品，觸及更多愛寵人士。</td>
-				    	</tr>
-				    	<tr>
-						    <th scope="row">107</th>
-						    <td>由五位台中二中熱心的高一學生為狗狗山發起線上募資計畫，金額達標，募資成功！</td>
-				    	</tr>
-				  		</tbody>
+						<thead class="thead-dark">
+						<tr>
+							<th scope="col">年分</th>
+							<th scope="col">事蹟</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">109</th>
+								<td>歷經10餘年，狗寶貝和貓寶貝成功送養達到400隻！</td>
+							</tr>
+							<tr>
+								<th scope="row">108</th>
+								<td>與中友百貨合作，以狗狗山的特色推出限量愛心商品，觸及更多愛寵人士。</td>
+							</tr>
+							<tr>
+								<th scope="row">107</th>
+								<td>由五位台中二中熱心的高一學生為狗狗山發起線上募資計畫，金額達標，募資成功！</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
@@ -362,7 +362,7 @@
 			</div>
 			<div class="col-sm col-12 align-self-center text-center mr-3 adjust_m">
 				<h5 class="card-title">交通資訊</h5>
-		    	<p class="card-text" style="text-align:justify;">Google Map 搜尋松群護理之家，接著經過松群護理之家向左轉並直走，就可抵達園區。 </p>
+				<p class="card-text" style="text-align:justify;">Google Map 搜尋松群護理之家，接著經過松群護理之家向左轉並直走，就可抵達園區。 </p>
 			</div>
 		</div>
 	</div>
@@ -409,7 +409,7 @@
 				匯款帳號（700）0021088 0832594
 				<br>匯款劃撥：22858257
 				<br>戶名：社團法人台灣黑皮狗狗山友善動物協會
- 			</div>
+			</div>
 			<div class="col-12 mt-4 text-center">
 				Copyright 2021 GouGouSuan Association. All rights reserved. Designed by AJTeam.
 			</div>
