@@ -28,8 +28,8 @@
 	<!--每個解析度下container-fluid沒有設定寬度，會呈現滿版的布局-->
 	<div class="container-fluid">
 		<div class="row" >
-		 <div class="col-md-12"> 
-		 	<!--螢幕寬度>=992px時做出橫列導覽列-->
+		<div class="col-md-12"> 
+			<!--螢幕寬度>=992px時做出橫列導覽列-->
 		    <nav class="nav navbar-expand-xl fixed-top stroke navbar-custom">
 		    	<a class="navbar-brand mr-5" href="index.php">
 		    		<img src="pic/logo.svg" alt="Logo" style="width:10rem;">
