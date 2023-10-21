@@ -23,6 +23,16 @@
 	<script src="index.js"></script>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ4YGERFHR"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-MZ4YGERFHR');
+</script>
+
 <body id="bootstrap-overrides">
 	<!--每個解析度下container-fluid沒有設定寬度，會呈現滿版的布局-->
 	<div class="container-fluid">

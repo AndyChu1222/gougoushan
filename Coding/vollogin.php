@@ -21,6 +21,16 @@
 	<script src="https://kit.fontawesome.com/09745b270c.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ4YGERFHR"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-MZ4YGERFHR');
+</script>
+
 <script>
 function showdiv(id) {
 		      var a = document.getElementById(id);

@@ -160,6 +160,16 @@
 
 <!--以上是志工管理的banner-->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ4YGERFHR"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-MZ4YGERFHR');
+</script>
+
 <section class="pb-5 mt-2">
 	<div class="container">
 		<div class="row justify-content-center">
